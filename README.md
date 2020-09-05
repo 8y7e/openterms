@@ -1,5 +1,6 @@
 # openterms
 Generate legal texts in markdown format. Lightweight, 0 dependencies.
+
 **DISCLAIMER:** OpenTerms is not a replacement for a lawyer and can't be held responsible for any damages you incur while using it's content. This software is provided "as is" under the [MIT License](./LICENSE) with neither liability nor warranty.
 
 # Usage:
