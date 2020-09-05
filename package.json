@@ -1,0 +1,47 @@
+{
+  "name": "openterms",
+  "description": "Generate legal texts in markdown format",
+  "author": "der Kode <contact@derkode.com>",
+  "license": "MIT",
+  "readmeFilename": "README.md",
+  "repository": "derKode/openterms",
+  "bugs": "https://github.com/derKode/openterms/issues",
+  "version": "1.0.0",
+  "keywords": [
+    "legal",
+    "terms",
+    "privacy"
+  ],
+  "files": [
+    "lib/"
+  ],
+  "module": "lib/index.esm.js",
+  "main": "lib/index.js",
+  "scripts": {
+    "reinstall": "rm -rf node_modules package-lock.json && npm install",
+    "lint": "eslint ./",
+    "build": "rollup --config rollup.config.js",
+    "prepublishOnly": "npm run lint && npm run build && echo \"\\033[0;32mReady to publish\\033[0m\"",
+    "test": "TZ='GMT' mocha \"./{,!(node_modules)/**}/*.test.js\""
+  },
+  "devDependencies": {
+    "@babel/core": "^7.11.5",
+    "@babel/plugin-proposal-json-strings": "^7.8.3",
+    "@babel/plugin-transform-runtime": "^7.11.5",
+    "@babel/plugin-transform-strict-mode": "^7.8.3",
+    "@babel/preset-env": "^7.11.5",
+    "@babel/register": "^7.11.5",
+    "@rollup/plugin-babel": "^5.2.0",
+    "@rollup/plugin-commonjs": "^15.0.0",
+    "@rollup/plugin-node-resolve": "^9.0.0",
+    "babel-plugin-transform-node-env-inline": "^0.4.3",
+    "chai": "^4.2.0",
+    "eslint": "^7.8.1",
+    "eslint-config-nebenan-base": "^1.6.0",
+    "mocha": "^8.1.3",
+    "rollup": "^2.26.9",
+    "rollup-plugin-delete": "^2.0.0",
+    "rollup-plugin-peer-deps-external": "^2.2.3",
+    "sinon": "^9.0.3"
+  }
+}

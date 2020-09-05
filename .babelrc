@@ -1,0 +1,11 @@
+{
+  "presets": [
+    ["@babel/preset-env", { "modules": false }]
+  ],
+  "plugins": [
+    "transform-node-env-inline",
+    "@babel/plugin-transform-runtime",
+    "@babel/plugin-transform-strict-mode",
+    "@babel/plugin-proposal-json-strings"
+  ]
+}
