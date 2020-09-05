@@ -1,5 +1,6 @@
 # openterms
 Generate legal texts in markdown format. Lightweight, 0 dependencies.
+**DISCLAIMER: This is only a placeholder generator and can't replace services of a lawyer. Use it at your own risk.**
 
 # Usage:
 
