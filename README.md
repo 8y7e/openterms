@@ -126,12 +126,12 @@ import marked from 'marked';
 const text = marked(generator(options));
 ```
 
-### As React component
+### As a React component
 
 You can use [react-markdown](https://github.com/rexxars/react-markdown) to avoid dangerouslySetInnerHTML:
 ```javascript
 import React from 'react';
 import ReactMarkdown from 'react-markdown';
 
-const node =  <ReactMarkdown source={generator(options)} />;
+const node = <ReactMarkdown source={generator(options)} />;
 ```
